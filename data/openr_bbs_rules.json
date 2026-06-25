@@ -1,0 +1,131 @@
+[
+  {
+    "name": "SDK stick fails to boot",
+    "if_seen": "AIBO powers off, hangs, or seems dead when booting an SDK Memory Stick.",
+    "check": [
+      "Verify flash ROM / firmware level.",
+      "Verify the Memory Stick has the full expected file layout.",
+      "Check whether the base image is WCONSOLE instead of WLAN or BASIC.",
+      "Check battery level and try a known-good stick.",
+      "Suspect hardware only after the above pass."
+    ],
+    "messages": [
+      714,
+      716,
+      722
+    ]
+  },
+  {
+    "name": "Service or subject NOT FOUND",
+    "if_seen": "Runtime reports `... NOT FOUND` while connecting objects or services.",
+    "check": [
+      "Inspect `OBJECTS.CFG` and `CONNECT.CFG`.",
+      "Confirm generated stubs and names match exactly.",
+      "Verify `REGISTER_ALL_ENTRY` runs in `DoInit()`."
+    ],
+    "messages": [
+      683,
+      686,
+      690
+    ]
+  },
+  {
+    "name": "selector out of range",
+    "if_seen": "Aperios reports `selector out of range` or `intraDeliver selector is out of range`.",
+    "check": [
+      "Inspect selector counts and generated entries.",
+      "Check `stub.cfg` and object registration.",
+      "Treat it as wiring/glue failure before suspecting application logic."
+    ],
+    "messages": [
+      336
+    ]
+  },
+  {
+    "name": "sTIMEOUT / error 28",
+    "if_seen": "Logs mention `error 28` or `sTIMEOUT` during object lifecycle.",
+    "check": [
+      "Check whether `DoStart()` or `DoStop()` blocks or never returns.",
+      "Move long-running work out of lifecycle callbacks."
+    ],
+    "messages": [
+      671,
+      704
+    ]
+  },
+  {
+    "name": "All joints move wildly when commanding one joint",
+    "if_seen": "Setting one joint causes unrelated joints to move to extreme positions.",
+    "check": [
+      "Verify the joint command vector length.",
+      "If the vector declares all joints, populate all joint values before sending it."
+    ],
+    "messages": [
+      719,
+      723
+    ]
+  },
+  {
+    "name": "WLAN config accepted in peer-to-peer but hangs via access point",
+    "if_seen": "AIBO boots in ad-hoc mode but hangs or fails with AP mode.",
+    "check": [
+      "Inspect `WLANCONF.TXT` formatting carefully.",
+      "Do not include spaces around `KEY=VALUE` assignments."
+    ],
+    "messages": [
+      543,
+      552
+    ]
+  },
+  {
+    "name": "Current OPEN-R stack needs static IP",
+    "if_seen": "User wants DHCP or dynamic assignment on older OPEN-R LAN support.",
+    "check": [
+      "Assume a known static IP is required unless using a different software stack.",
+      "Do not infer DHCP support from newer commercial AIBO products."
+    ],
+    "messages": [
+      693,
+      700,
+      701
+    ]
+  },
+  {
+    "name": "UDP send path stalls or reports busy",
+    "if_seen": "First UDP packet never completes or next packet reports `UDP_CONNECTION_BUSY`.",
+    "check": [
+      "Treat send as asynchronous and verify completion before the next packet.",
+      "Check callback flow and pacing."
+    ],
+    "messages": [
+      402
+    ]
+  },
+  {
+    "name": "Image transfer or large payload misbehaves",
+    "if_seen": "Passing camera/image arrays between objects leads to failures or unexpected copies.",
+    "check": [
+      "Remember `SetData(ptr, size)` copies to shared memory.",
+      "Check `OStatus` return codes.",
+      "Use explicit shared-memory handling if zero-copy semantics are required."
+    ],
+    "messages": [
+      696,
+      697
+    ]
+  },
+  {
+    "name": "R-CODE feature seems missing on ERS-7M3",
+    "if_seen": "R-CODE WLAN or support assumptions fail on ERS-7M3.",
+    "check": [
+      "Verify the exact R-CODE version and model support window.",
+      "Older R-CODE Ver2 did not support ERS-7M3 WLAN at first."
+    ],
+    "messages": [
+      1944,
+      1945,
+      1954,
+      1955
+    ]
+  }
+]

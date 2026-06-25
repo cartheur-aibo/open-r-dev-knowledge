@@ -1,0 +1,39 @@
+{
+  "source_files": [
+    "src/Msgs_1_to_726.html",
+    "src/Msgs_727_to_1955.html"
+  ],
+  "message_count": 1955,
+  "thread_count": 802,
+  "date_range": {
+    "start": "2002/06/03-10:24",
+    "end": "2006/01/12-04:21"
+  },
+  "topic_counts": {
+    "aperios": 36,
+    "boot_setup": 291,
+    "build_toolchain": 434,
+    "debugging": 238,
+    "motion": 468,
+    "networking": 325,
+    "rcode": 280,
+    "vision": 330
+  },
+  "model_counts": {
+    "ERS-210": 137,
+    "ERS-210A": 24,
+    "ERS-220": 43,
+    "ERS-7": 363,
+    "ERS-7M3": 7
+  },
+  "error_signature_counts": {
+    "command_not_found": 4,
+    "queue_overflow": 2,
+    "sTIMEOUT_error_28": 2,
+    "selector_out_of_range": 2,
+    "sendready_failed": 1,
+    "service_not_found": 3,
+    "tlb_exception": 3,
+    "udp_connection_busy": 1
+  }
+}
