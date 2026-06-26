@@ -4,28 +4,28 @@ A focused repo of agentic knowledge for Aibo Open-R development and debugging, e
 
 ## Context
 
-- Expert summary context: [context/openr_bbs_context.md](/home/cartheur/ame/aiventure/aiventure-github/cartheur-aibo/open-r-dev-knowledge/context/openr_bbs_context.md)
-- Troubleshooting rules: [context/openr_bbs_troubleshooting_rules.md](/home/cartheur/ame/aiventure/aiventure-github/cartheur-aibo/open-r-dev-knowledge/context/openr_bbs_troubleshooting_rules.md)
-- Error index: [context/openr_bbs_error_index.md](/home/cartheur/ame/aiventure/aiventure-github/cartheur-aibo/open-r-dev-knowledge/context/openr_bbs_error_index.md)
-- Model index: [context/openr_bbs_model_index.md](/home/cartheur/ame/aiventure/aiventure-github/cartheur-aibo/open-r-dev-knowledge/context/openr_bbs_model_index.md)
-- Topic index: [context/openr_bbs_topic_index.md](/home/cartheur/ame/aiventure/aiventure-github/cartheur-aibo/open-r-dev-knowledge/context/openr_bbs_topic_index.md)
+- Expert summary context: [context/openr_bbs_context.md](context/openr_bbs_context.md)
+- Troubleshooting rules: [context/openr_bbs_troubleshooting_rules.md](context/openr_bbs_troubleshooting_rules.md)
+- Error index: [context/openr_bbs_error_index.md](context/openr_bbs_error_index.md)
+- Model index: [context/openr_bbs_model_index.md](context/openr_bbs_model_index.md)
+- Topic index: [context/openr_bbs_topic_index.md](context/openr_bbs_topic_index.md)
 
 
 ## Roadmap
 
-- Execution roadmap: [ROADMAP.md](/home/cartheur/ame/aiventure/aiventure-github/cartheur-aibo/open-r-dev-knowledge/ROADMAP.md)
-- Claim schema: [schemas/claim_record.schema.json](/home/cartheur/ame/aiventure/aiventure-github/cartheur-aibo/open-r-dev-knowledge/schemas/claim_record.schema.json)
-- Evaluation scaffold: [eval/README.md](/home/cartheur/ame/aiventure/aiventure-github/cartheur-aibo/open-r-dev-knowledge/eval/README.md)
-- Execution checklist: [tasks/execution_checklist.md](/home/cartheur/ame/aiventure/aiventure-github/cartheur-aibo/open-r-dev-knowledge/tasks/execution_checklist.md)
+- Execution roadmap: [ROADMAP.md](ROADMAP.md)
+- Claim schema: [schemas/claim_record.schema.json](schemas/claim_record.schema.json)
+- Evaluation scaffold: [eval/README.md](eval/README.md)
+- Execution checklist: [tasks/execution_checklist.md](tasks/execution_checklist.md)
 
 ## Data
 
-- Full message corpus JSON: [data/openr_bbs_messages.json](/home/cartheur/ame/aiventure/aiventure-github/cartheur-aibo/open-r-dev-knowledge/data/openr_bbs_messages.json)
-- Full message corpus JSONL: [data/openr_bbs_messages.jsonl](/home/cartheur/ame/aiventure/aiventure-github/cartheur-aibo/open-r-dev-knowledge/data/openr_bbs_messages.jsonl)
-- Full message corpus CSV: [data/openr_bbs_messages.csv](/home/cartheur/ame/aiventure/aiventure-github/cartheur-aibo/open-r-dev-knowledge/data/openr_bbs_messages.csv)
-- Thread index: [data/openr_bbs_threads.json](/home/cartheur/ame/aiventure/aiventure-github/cartheur-aibo/open-r-dev-knowledge/data/openr_bbs_threads.json)
-- Troubleshooting rules JSON: [data/openr_bbs_rules.json](/home/cartheur/ame/aiventure/aiventure-github/cartheur-aibo/open-r-dev-knowledge/data/openr_bbs_rules.json)
-- Corpus manifest: [data/openr_bbs_manifest.json](/home/cartheur/ame/aiventure/aiventure-github/cartheur-aibo/open-r-dev-knowledge/data/openr_bbs_manifest.json)
+- Full message corpus JSON: [data/openr_bbs_messages.json](data/openr_bbs_messages.json)
+- Full message corpus JSONL: [data/openr_bbs_messages.jsonl](data/openr_bbs_messages.jsonl)
+- Full message corpus CSV: [data/openr_bbs_messages.csv](data/openr_bbs_messages.csv)
+- Thread index: [data/openr_bbs_threads.json](data/openr_bbs_threads.json)
+- Troubleshooting rules JSON: [data/openr_bbs_rules.json](data/openr_bbs_rules.json)
+- Corpus manifest: [data/openr_bbs_manifest.json](data/openr_bbs_manifest.json)
 
 Each message record includes:
 
