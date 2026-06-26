@@ -1,4 +1,4 @@
-## Sony Aperios Open-R
+## Sony Aperios Open-R Knowledge Agent
 
 A focused repo of agentic knowledge for Aibo Open-R development and debugging, extracted from the experience of persons engaging on the old Sony BBS.
 
