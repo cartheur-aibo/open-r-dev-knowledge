@@ -10,6 +10,14 @@ A focused repo of agentic knowledge for Aibo Open-R development and debugging, e
 - Model index: [context/openr_bbs_model_index.md](/home/cartheur/ame/aiventure/aiventure-github/cartheur-aibo/open-r-dev-knowledge/context/openr_bbs_model_index.md)
 - Topic index: [context/openr_bbs_topic_index.md](/home/cartheur/ame/aiventure/aiventure-github/cartheur-aibo/open-r-dev-knowledge/context/openr_bbs_topic_index.md)
 
+
+## Roadmap
+
+- Execution roadmap: [ROADMAP.md](/home/cartheur/ame/aiventure/aiventure-github/cartheur-aibo/open-r-dev-knowledge/ROADMAP.md)
+- Claim schema: [schemas/claim_record.schema.json](/home/cartheur/ame/aiventure/aiventure-github/cartheur-aibo/open-r-dev-knowledge/schemas/claim_record.schema.json)
+- Evaluation scaffold: [eval/README.md](/home/cartheur/ame/aiventure/aiventure-github/cartheur-aibo/open-r-dev-knowledge/eval/README.md)
+- Execution checklist: [tasks/execution_checklist.md](/home/cartheur/ame/aiventure/aiventure-github/cartheur-aibo/open-r-dev-knowledge/tasks/execution_checklist.md)
+
 ## Data
 
 - Full message corpus JSON: [data/openr_bbs_messages.json](/home/cartheur/ame/aiventure/aiventure-github/cartheur-aibo/open-r-dev-knowledge/data/openr_bbs_messages.json)

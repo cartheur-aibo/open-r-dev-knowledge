@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/openr-dev-knowledge/schemas/claim_record.schema.json",
+  "title": "OPEN-R Claim Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "claim_id",
+    "claim_type",
+    "statement",
+    "confidence",
+    "authority_rank",
+    "scope",
+    "evidence"
+  ],
+  "properties": {
+    "claim_id": {
+      "type": "string",
+      "pattern": "^claim_[a-z0-9_]+$"
+    },
+    "claim_type": {
+      "type": "string",
+      "enum": [
+        "fact",
+        "heuristic",
+        "inference",
+        "procedure_hint",
+        "negative_knowledge",
+        "open_question"
+      ]
+    },
+    "statement": {
+      "type": "string",
+      "minLength": 1
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low", "unknown"]
+    },
+    "authority_rank": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 4,
+      "description": "1 = Sony/Open-R support, 2 = repeated community guidance, 3 = single community report, 4 = weak speculation"
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "models": {
+          "type": "array",
+          "items": {"type": "string"},
+          "default": []
+        },
+        "firmware": {
+          "type": "array",
+          "items": {"type": "string"},
+          "default": []
+        },
+        "sdk_versions": {
+          "type": "array",
+          "items": {"type": "string"},
+          "default": []
+        },
+        "base_images": {
+          "type": "array",
+          "items": {"type": "string"},
+          "default": []
+        },
+        "media": {
+          "type": "array",
+          "items": {"type": "string"},
+          "default": []
+        },
+        "applies_when": {
+          "type": "array",
+          "items": {"type": "string"},
+          "default": []
+        },
+        "does_not_apply_when": {
+          "type": "array",
+          "items": {"type": "string"},
+          "default": []
+        }
+      },
+      "required": ["models"]
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["message_id", "why_it_supports"],
+        "properties": {
+          "message_id": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "why_it_supports": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "contradicts": {
+      "type": "array",
+      "items": {"type": "string"},
+      "default": []
+    },
+    "corroborates": {
+      "type": "array",
+      "items": {"type": "string"},
+      "default": []
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}
